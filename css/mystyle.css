@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Maven+Pro&family=Nunito&family=Red+Rose:wght@300;400&family=Titillium+Web&display=swap');
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background: url(https://cdn.wallpapersafari.com/70/84/jcNqFY.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Maven Pro',sans-serif;
+  
+font-size: medium;
+font-weight: 300;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 
+
+#header-nav {
+  background: linear-gradient(
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.7)
+);
+backdrop-filter: blur(2rem);
+box-shadow: 0 .4rem .8rem rgba(248, 246, 246, 0.333);
+  -webkit-box-shadow: 0px 2px 5px #27272780;
+  -moz-box-shadow: 0px 2px 5px #27272780;
+  position: relative;
+  z-index: 999999;
+  height: 70px;
+  text-align: center;
+ 
+  
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { 
+ 
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgb(70, 69, 69);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  text-align: center;
+  font-family: 'Bruno Ace Sc',cursive;
+  position: absolute;
+  left: 500px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.main {
+  position: relative;
+box-shadow: 0 .4rem .8rem ;
+color:white;
+
+}
+
+.container1 {
+  position: absolute;
+  top:70px;
+  
+}
+
+.container2 {
+  position: absolute;
+  top: 400px;
+  width: 90%;
+  left: 50px;
+  
+}
+
+.container3 {
+  position: absolute;
+  top: 1100px;
+  margin-bottom: 40px;
+  width: 90%;
+  left: 50px;
+}
+
+.left {
+  margin-left: 10%;
+  float: left;
+  padding: 2%;
+  width: 80%;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px 2px  rgb(245, 245, 247); 
+}
+
+.row2 {
+  display: inline-flex;
+  padding: 30px;
+  padding-bottom: 90px ;
+}
+
+label {
+  font-size: 16px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  color: black;
+  border-style: inset;
+  
+}
+
+#second {
+  margin-left: 100px;
+  float: left;
+}
+
+button {
+  display: inline;
+  margin: 70px;
+  color: rgb(12, 12, 39);
+}
+
+#plot-button {
+  background-color:   #3f507c;
+  margin-left: 30%;
+  font-size: 17px;
+  color: white;
+
+}
+
+#animate-button {
+  background-color:  #3f507c;
+  font-size: 17px;
+  margin-left: 5%;
+  color: white;
+}
+
+#cmpr-button{
+  background-color:  #3f507c;
+  font-size: 17px;
+  margin-left: 5%;
+  color: white;
+
+}
+
+#canvas {
+  text-align: center;
+  margin-left: 190px;
+  margin-top: 0px;
+  padding-top: 0px;
+  visibility: hidden;
+}
+
+.right {
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#am_alg_name, #am_alg_seek, #cl-seek {
+  margin-left: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-emphasis: bold;
+  color: white
+}
+
+#graph_area {
+  visibility: hidden;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 2px  rgb(100, 103, 139);
+  width: 90%;
+  margin-left: 5%;
+}
+#cmpr_area {
+  visibility: hidden;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px 2px  rgb(100, 103, 139);
+  width: 90%;
+  margin-left: 5%;
+}
+
+#plt_alg_name {
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-emphasis: bold;
+  color:white;
+  font-family: 'Bruno Ace Sc',cursive;
+}
+
+#cmpr-head {
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-emphasis: bold;
+  color: #004080;
+}
+
+
+#plt_alg_seek {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+}
+
+#cal-seek {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/********** Large devices only **********/
+@media (min-width: 1250px) {
+
+  /*Home Page*/
+  .cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .transform {
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
+  }
+}
+
+@media (max-width: 1450px){
+  #second{
+    margin-left: 50px;
+  }
+
+}
+
+@media (max-width: 1300px){
+  #second{
+    margin-left: 30px;
+  }
+
+}
+
+@media (min-width: 1250px) and (max-width: 1500px) {
+
+  .container2 {
+    position: absolute;
+    top: 600px;
+    width: 80%;
+  }
+
+  #graph_area {
+    width: 80%;
+    margin-left: 13%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1249px) {
+
+  /* Home Page */
+  #intro, #hd2, #why {
+    font-size: 20px;
+  }
+
+  #terms {
+    font-size: 18px;
+  }
+
+  #bold {
+    font-size: 19px;
+  }
+
+  .cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cont div {
+    font-size: 20px ;
+  }
+
+  /*Simulate Page */
+  .left {
+    width: 80%;
+    padding: 30px;
+    margin-left: 10%;
+  }
+
+  #second {
+    margin-left: 90px;
+  }
+
+  #plot-button {
+    margin-left: 40%;
+  }
+
+  #am_alg_name, #am_alg_seek {
+    margin-left: 150px;
+  }
+
+  .container2 {
+    position: absolute;
+    top: 600px;
+    width: 90%;
+    left: 50px;
+  }
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+  /* Simulate Page */
+  .left {
+    width: 80%;
+    margin-top: 20px;
+    padding: 25px;
+    padding-left: 50px;
+    margin-left: 10%;
+  }
+
+  .right {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #canvas {
+    margin-left: 25px;
+  }
+
+  #second {
+    margin-left: 150px;
+  }
+
+  #plot-button {
+    margin-left: 150px ;
+  }
+
+  .container2 {
+    position: absolute;
+    top: 800px;
+    width: 100%;
+    left: 1%;
+  }
+
+  #graph_area {
+    margin-top: 20px;
+  }
+
+  
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 4.7vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a i { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  
+  /*Simulate Page */
+
+  .left {
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 10%;
+    padding-left: 60px;
+  }
+
+  #second {
+    margin-left: 160px;
+  }
+
+  #plot-button {
+    margin-left: 120px;
+  }
+
+  #animate-button {
+    margin-left: 50px;
+  }
+
+  .right {
+    padding: 0;
+    width: 100%;
+  }
+
+  #canvas {
+    margin-left: 35px;
+    width: 80%;
+  }
+
+  #am_alg_name {
+    margin-top: 30px;
+  }
+
+  #plt_alg_name {
+    margin-top: 10px;
+  }
+
+  .container2 {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    left: 1%;
+  }
+
+  .container3{
+    position: absolute;
+    top: 2000px;
+    width: 100%;
+    left: 1%;
+  }
+
+}
+ 
+
+@media (max-width: 600px) {
+  .left {
+    width: 80%;
+    margin: 15px;
+    margin-left: 6%;
+    padding: 0px;
+  }
+
+  .row2 {
+    width: 100%;
+    padding: 15%;
+    padding-bottom: 2%;
+  }
+
+  #second {
+    margin-left: 12%;
+  }
+
+  #plot-button {
+    margin-left: 20%;
+    margin-bottom: 10px;
+  }
+
+  #animate-button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  #cmpr-button{
+    margin-left: 30%;
+    margin-bottom: 10px;
+  }
+}
